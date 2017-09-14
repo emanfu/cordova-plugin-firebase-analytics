@@ -5,7 +5,7 @@
 
     cordova plugin add cordova-plugin-firebase-analytics --save
 
-Go yo firebase console and export `google-services.json` and `GoogleService-Info.plist`. Put those files into the root of your cordova app folder.
+Go yo firebase console and export `google-services.json` and `GoogleService-Info.plist`. Put those files into `platforms/android` and `platforms/ios/{Project}/Resources` accordingly. Also make sure that `GoogleService-Info.plist` added to your xcode project workspace.
 
 NOTE: on iOS in order to collect demographic, age, gender data etc. you should additionally [include `AdSupport.framework`](https://firebase.google.com/support/guides/analytics-adsupport) into your project.
 
